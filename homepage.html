@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+   
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'cormorant garamond',serif;
+        }
+        body{
+           font-family: 'cormorant garamond',serif;
+        }
+       
+
+      
+        .section{
+            display: flex;
+            justify-content: space-around;
+        }
+   
+      .section2{
+ 
+        height: 50%;
+        display: flex;
+        justify-content: space-around   ;
+        align-items: center;
+        padding-left: 11%;
+        padding-right: 11%;
+      }
+  
+      .search-container button{
+       
+     background-color: white;
+     border: none;
+ 
+     cursor: pointer;
+     }
+     .search-container>a{
+      margin-left: 50px;
+      font-size: 25px;
+      
+     }
+      i{
+        font-size: 20px;
+      }
+      .section2>div>a{
+        padding: 10px;
+        
+      
+      }
+      .section2>div:first-child>a:hover{
+        background-color: #f2f2f6;
+      }
+      .login>a{
+        margin-left: 30px;
+      }
+   
+      .page>select{
+        border: none;
+        text-align: center;
+      
+       cursor: pointer;
+    
+      }
+      .page>a,.login>button,#select{
+        text-decoration: underline;
+      }
+      .page>a:hover,.login>button:hover,#select:hover{
+        text-decoration: none;
+      }
+      .last_bar>a{
+        color:white;
+        height: 29px;
+      justify-content: space-evenly;
+        margin-left: 25px;
+        font-weight: lighter;
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+      }
+      .last_bar>a:hover{
+        color: #76767b;
+      }
+      .last_bar{
+        border: 1px solid black;
+    
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+       
+      
+      
+      }
+     .section2>a>img{
+        width: 100px;
+        padding-bottom: 20px;
+     }
+     .login>button{
+      border: none;
+     margin-left: 13px;
+   
+     }
+     .login>button:hover{
+      background-color: #e6e6f7;
+      cursor: pointer;
+     }
+    
+    
+      
+      
+
+
+    </style>
+    <style>
+
+        #navbar{
+            
+            width: 100%;
+            height: 100px;
+            background-color: white;
+        
+            top: 0px;
+            position: fixed;
+        }
+        #main{
+            border: 1px solid green;
+            width: 90%;
+            margin: auto;
+         
+         
+           margin-top: 100px;
+        
+            /* height: 650px; */
+       
+            
+            
+        }
+   
+        /* #main>img{
+           
+           height: 800px;
+           width: 100%;
+           /* position: absolute;
+           top: 10%; */
+           
+           
+          
+        /* } */ */
+        .text-block{
+            border: 1px solid red;
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            top: 101%;
+            left: 6%;
+            background-color: white;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .check{
+            border: 1px solid red;
+            height: 1000px;
+            width: 80%;
+           
+            
+        }
+       
+    
+    </style>
+    <style>
+
+      body {
+          font-family: 'Cormorant Garamond', serif;
+      }
+
+      #home{
+          padding-top: 109px;
+          display: block;
+          width: 90%;
+          margin: auto;
+          display: wrap;
+      }
+
+      #smallbox {
+          
+          color: black;
+          background-color: white;
+          width: 100%;
+          display: wrap;
+          
+      }
+
+      #box2 {
+          /* border: 1px solid red; */
+          margin: auto    ;
+          margin-top: 100px;
+          /* height: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between; */
+
+          display: grid;
+          width: 80%;
+          text-align: center;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 570px;
+          gap: 20px;
+          margin-bottom: 20%;
+      }
+
+      #brands {
+          color: black;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          margin: auto;
+          height: 40px;
+      }
+
+      #smallbox>a{
+          color: black;
+      }
+
+      #box3 {
+         /* border: 1px solid black;
+         width: 50%;
+         margin: auto; */
+          /* border: 1px solid red; */
+          /* display: flex;
+          width: 100%;
+          justify-content: space-between;
+          margin: auto; */
+          display: grid;
+          text-align: center;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 570px;
+          gap: 15px;
+          margin-bottom: 10%;
+
+      }
+
+      #inbox{
+          height: fit-content;
+          width: 33%;
+        
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          text-align: center;
+          padding: 30px;
+      }
+
+
+      
+
+      .pre {
+          color: grey;
+      }
+
+    
+
+      #imgbox {
+          
+         
+          justify-content: center;
+          align-items: center;
+          
+          display: flex;
+
+
+      }
+      .arr {
+          text-align: center;  
+      }
+      
+
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+    }
+
+    /* Small Screen */
+    @media only screen and (min-width: 320px) and (max-width: 499px) {
+    }
+  </style>
+  <style>
+    #section3{
+       /* border: 1px solid red; */
+       width: 90%;
+       height: 500px;
+       display: flex;
+       margin: auto;
+       margin-bottom: 90px;
+       
+    }
+    #section3>div:first-child{
+      /* border: 1px solid rgb(22, 21, 21); */
+      width: 30%;
+      height: 100%;
+      justify-content: center;
+      
+    }
+    #section3>div:last-child{
+      /* border: 1px solid rgb(110, 70, 70); */
+      width: 70%;
+      height: 100%; 
+      display: flex;
+      justify-content: space-between;
+    }
+    .child2>div{
+      /* border: 1px solid rgb(110, 70, 70); */
+      width: 32%;
+      height: 100%;
+      background-color: white;
+      padding-bottom: 20px;
+      
+      
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .arr{
+
+      
+      padding-top: 200px;
+ 
+    }
+    body{
+      background-color: #f3f3f3;
+    }
+    .part>a+h1,.part>a+h1+p{
+     margin-bottom: 20px;
+    }
+    .part2>img+h1,.part2>img+h1+p{
+      margin-bottom: 10px;
+    }
+    #middle{
+
+      height: 650px;
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      margin-bottom: 90px;
+    }
+    #middle>div:first-child,#middle>div:last-child{
+
+      width: 30%;
+      height: 85%;
+      margin: 50px 0px 50px 0px;
+      
+   
+    }
+    #middle>div:nth-child(2){
+    width: 35%;
+    height: 100%;
+
+    }
+
+    .image1>a>img,.image3>a>img{
+      width: 100%;
+      height: 90%;
+    
+    }
+    img+h1,p{
+      text-align: center;
+      padding: 5px;
+    }
+  
+    .image2>a>img{
+      width: 100%;
+      height: 600px;
+
+      
+     
+    }
+    #last{
+    
+      height: 600px;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+      display: flex;
+    }
+    #last>div{
+      width: 50%;
+    }
+    #last>div>img{
+      width: 100%;
+      height: 100%;
+    }
+    #box6{
+      margin-bottom: 50px;
+    }
+    a>h2,h1+a{
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="section">
+            <div class="page">
+                <select name="India" id="select">
+                    <option value="india">India</option>
+                    <option value="Albenia">Albenia</option>
+                    <option value="Aergentina">Aergentina</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Colabmia">Colabmia</option>
+                    <option value="Egypt">Egypt</option>
+                </select>
+                <a href="customercare">CUSTOMER CARE</a>
+    
+            </div>
+            <div class="login" >
+              <a href="ragister.html">Register</a>
+                <!-- <button><i class="fa fa-pencil"> <a href="ragister.html"></a></i> Register</button> -->
+                <!-- <a href="rigister"><i class="fa fa-pencil"></i> REGISTER</a> -->
+                <!-- <a href="login"> <i class="fa fa-lock"></i>  LOGIN</a> -->
+                <button><i class="fa fa-lock"></i> LOGIN</button>
+            </div>
+         
+        </div>
+        <div class="section2">
+            <div>
+             <a href="./womens.html">WOMENS</a>
+             <a href="./mens.html">MENS</a>
+             <a href="./kids.html">KIDS</a>
+             <a href="./Design.html">DISIGN+ART</a>
+            </div>
+            <a href="./homepage.html"><img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a>
+            <div class="search-container">
+                <!-- <form action="/action_page.php">
+                 <input type="text" placeholder="Search.." name="search"> -->
+                 <!-- <button type="submit"><i class="fa fa-search" style="font-size: 25px;"></i></button> -->
+                 <a href="search"><i class="fa fa-search"></i></a>
+                 <a href="wishlist"><i class="fa fa-heart-o"></i></a>
+                 <a href="navbar.html"><i class="fa fa-shopping-bag"></i></a>
+                <!-- </form> -->
+    
+            </div>
+          
+         
+        </div>
+        <div class="last_bar">
+            <a href="new_arrivals">NEW ARRIVALS</a>
+            <a href="#mens">DESIGNERS</a>
+            <a href="#kids">CLOTHING</a>
+            <a href="#disign">SHOES</a>
+            <a href="accessories">ACCESSORIES & BAGS</a>
+            <a href="yoox">YOOXGEN</a>
+            <a href="collebs">COLLABORATIONS</a>
+            <a href="bestoffers">BEST OFFERS</a>
+        </div>
+    </div>
+    
+   
+    <div>
+      <img id="home" src="https://www.yoox.com/images/yoox80/banners/6895_1_Pride_Main_WM.jpg?634485886601286852#width=1380&height=637" alt="">
+      <!-- <div id="smallbox">
+          <h1>Out of Office</h1>
+          <h3>Vibrante Vacation style</h3>
+          <a href="https://www.yoox.com/us/project/trend_men">Discover the trend</a>
+          <a href="https://www.yoox.com/us/men/shoponline?dept=mmrc_2206trndvbrnt">Shop now</a>
+         </div> -->
+  </div>
+
+  <div id="box2">
+      <div class="part">
+          <a href="https://www.yoox.com/us/men/shoponline?dept=mmrc_2206fcsnccssrs"> <img src="https://www.yoox.com/images/yoox80/banners/6862_1_HL_DM_UK.png?634485886601286852#width=430&height=600" alt=""></a>
+          <!-- <img src="https://www.yoox.com/images/yoox80/banners/6824_4_FocusOnAccessories_M_HL.jpg?634485886869569819#width=430&height=600" alt=""> -->
+       <h1>UP TO 80% OFF</h1>
+        <p>Priced as Marked</p>
+       <a style="color: black;" href="https://www.yoox.com/us/men/shoponline?dept=mmrc_2206fcsnccssrs"><h2>SHOP NOW</h2></a>
+      </div>
+      <div>
+          <h2 id="brands" >DESIGNER</h2>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/dolce%20&%20gabbana_md#/dept=men&Md=25"><h2>DOLCE AND GABBANA</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/dsquared2_md#/dept=men&Md=378"><h2>DSQUARED2</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/roberto%20cavalli_md#/dept=men&Md=65"><h2>ROBERTO CAVALLI</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/maison%20margiela_d#/dept=men&d=50"><h2>MAISON MARGIELA</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/versace_md#/dept=men&Md=1889"><h2>GUCCI</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/balenciaga_d#/dept=men&d=221"><h2>KENZO</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/gucci_d#/dept=men&d=42"><h2>BALENCIAGA</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/prada_md#/dept=men&Md=63"><h2>MARNI</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/marni_md#/dept=men&Md=203"><h2>CALVIN KLEIN</h2></a>
+          <a id="brands" href="https://www.yoox.com/us/men/shoponline/calvin%20klein_md#/dept=men&Md=206"><h2>VERSACE</h2></a>
+          
+         
+      
+      </div>
+      <div class="part2">
+          <img src="https://www.yoox.com/images/yoox80/banners/5628_1_SpotonFrenchBrand_HL_M.jpg?634485886601286852#width=430&height=600" alt="">
+        <h1>UP TO 80% OFF ON FRENCH</h1>
+        <p>Balenciaga Masion Kitsune , Jacquemus and More</p>
+        <a style="color: black;" href="https://www.yoox.com/us/project/multiform_artists"><h2>SHOP NOW</h2></a>
+      </div>
+  </div>
+  <div id="section3">
+   <div class="child1">
+    <div class="arr">
+      <h1>NEW ARRIVALS</h1>
+      <a style="color: black;" href="https://www.yoox.com/us/men/new%20arrivals/shoponline#/dept=newarrivalsmen">VIEW ALL</a>
+    
+     </div>
+   </div>
+   <div class="child2">
+     <div>
+      <div id="inbox">
+        <a href=""><img  src="https://www.yoox.com/images/items/12/12802961WT_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+      <h2>PALM ANGELS</h2>
+      <p>T-Shirt</p>
+      <h4>
+         <span class="pre"><del>$ 460.00</del></span>
+        <span class="pro">28% OFF</span>
+      </h4>
+      <h4>$331.00</h4>
+    </div>
+     </div>
+     <div>
+      <div id="inbox">
+       <a href=""><img src="https://www.yoox.com/images/items/45/45664620KQ_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a> 
+    <h2>NEIL BARRET</h2>
+    <p>Hand Bag</p>
+    <h4>
+        <span class="pre"><del>$ 652.00</del></span>
+       <span class="pro">33% OFF</span>
+     </h4>
+     <h4>$435.00</h4>
+
+    </div>
+     </div>
+     <div>
+      <div id="inbox">
+       <a href=""> <img src="https://www.yoox.com/images/items/12/12741167IL_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+     <h2>DISCARD 2</h2>
+     <p>T-Shirts</p>
+     <h4>
+        <span class="pre"><del>$ 2029.00</del></span>
+       <span class="pro">43% OFF</span>
+     </h4>
+     <h4>$1144.00</h4>
+
+    </div>
+     </div>
+   </div>
+  </div>
+ 
+
+
+
+
+ 
+   <div id="middle">
+    <div class="image1">
+      <a href=""><img src="https://www.yoox.com/images/yoox80/banners/6825_1_Vans_Tris_WM.jpg?634485886601286852#width=387&height=540" alt="">
+      <h1>VANS</h1>
+    <p>Iconic Model</p></a>
+    </div>
+    <div class="image2">
+      <a href="">
+        <img src="https://www.yoox.com/images/yoox80/banners/6825_5_Montblanc_M_Tris.jpg?634485886601286852#width=473&height=660" alt="">
+        <h1>MONTBLANG</h1>
+        <p>The New Gift Generation</p>
+      </a>
+    </div>
+    <div class="image3">
+      <a href=""><img src="https://www.yoox.com/images/yoox80/banners/6825_1_Artifact_Tris.jpg?634485886601286852#width=473&height=660" alt="">
+      <h1>ARTIFACT BY SUPERGA</h1>
+    <p>The value of craftmanship</p></a>
+    </div>
+   </div>
+
+  <!-- gjgg -->
+  <div id="section3">
+    <div class="child1">
+     <div class="arr">
+       <h1>RECENTLY VIEWED</h1>
+       <a style="color: black;" href="https://www.yoox.com/us/men/new%20arrivals/shoponline#/dept=newarrivalsmen">VIEW ALL</a>
+     
+      </div>
+    </div>
+    <div class="child2">
+      <div>
+       <div id="inbox">
+        <a href=""> <img  src="https://www.yoox.com/images/items/12/12788056JK_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+       <h2>McQ Alexander McQueen</h2>
+       <p>Sweat Shirt</p>
+       <h4>
+          <span class="pre"><del>$ 452,00</del></span>
+         <span class="pro">28% OFF</span>
+       </h4>
+       <h4>$331.00</h4>
+     </div>
+      </div>
+      <div>
+       <div id="inbox">
+         <a href=""><img src="https://www.yoox.com/images/items/12/12705483BI_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+     <h2>PALM ANGElS</h2>
+     <p>T-Shirt</p>
+     <h4>
+         <span class="pre"><del>$ 652.00</del></span>
+        <span class="pro">33% OFF</span>
+      </h4>
+      <h4>$435.00</h4>
+ 
+     </div>
+      </div>
+      <div>
+       <div id="inbox">
+         <a href="/mens.html"><img src="https://www.yoox.com/images/items/13/13752701FU_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+      <h2>GIVINCHY</h2>
+      <p>Shorts & Bermuda</p>
+      <h4>
+         <span class="pre"><del>$ 2029.00</del></span>
+        <span class="pro">43% OFF</span>
+      </h4>
+      <h4>$1144.00</h4>
+ 
+     </div>
+      </div>
+    </div>
+   </div>
+
+
+
+
+
+  <div id="box6">
+      <a id="imgbox" href="https://www.yoox.com/us/men/shoponline?dept=gm8byooxss"> <img src="https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886869569819#width=930&height=660" alt=""></a>
+      <!-- <div>
+          <h1>WHERE PEOPLE DANCE</h1>
+          <p>The new SS22 collection from 8 by YOOX</p>
+          <a href="https://www.yoox.com/us/men/shoponline?dept=gm8byooxss">SHOP NOW</a>
+          <a href="https://www.yoox.com/us/project/8byYOOX_SS22">GET INSPIRED</a>
+      </div> -->
+           
+      
+     
+  </div>
+  <div id="last">
+    <div><img src="https://www.yoox.com/images/yoox80/banners/5628_1_Multiform_Bottom.gif?634485886601286852#width=690&height=637" alt=""></div>
+    <div>
+    <img src="https://www.yoox.com/images/yoox80/banners/6824_1_Trendvacation_HalfBottom_M.jpg?634485886601286852#width=690&height=637" alt="">
+    </div>
+  </div>
+ 
+  
+    
+
+     
+    
+</body>
+</html>

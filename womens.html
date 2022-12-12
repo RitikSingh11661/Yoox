@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+    <title>Womens</title>
+
+    <style>
+        /* navbar css */
+
+        #navbar {
+
+            height: 120px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            background-color: white;
+
+
+
+
+
+
+            /* background-color: white; */
+            /* position: fixed;
+margin: auto;
+background-color: white; */
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'cormorant garamond', serif;
+        }
+
+
+
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .section2 {
+
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 11%;
+            padding-right: 11%;
+
+        }
+
+        .search-container button {
+
+            background-color: white;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        .search-container>a {
+            margin-left: 50px;
+            font-size: 25px;
+
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        .section2>div>a {
+            padding: 10px;
+
+
+        }
+
+        .section2>div:first-child>a:hover {
+            background-color: #f2f2f6;
+
+        }
+
+        .login>a {
+            margin-left: 30px;
+        }
+
+        /* h1{
+ color:
+ #4f46e5 ;
+} */
+        .page>select {
+            border: none;
+            text-align: center;
+
+            cursor: pointer;
+
+        }
+
+        .page>a,
+        .login>button,
+        #select {
+            text-decoration: underline;
+        }
+
+        .page>a:hover,
+        .login>button:hover,
+        #select:hover {
+            text-decoration: none;
+        }
+
+        .last_bar>a {
+            color: white;
+            height: 29px;
+            justify-content: space-evenly;
+            margin-left: 25px;
+            font-weight: lighter;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .last_bar>a:hover {
+            color: #76767b;
+        }
+
+        .last_bar {
+            border: 1px solid black;
+
+            background-color: black;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+
+
+
+        }
+
+        .logoimg {
+            width: 100px;
+            padding-bottom: 20px;
+        }
+
+        .login>button {
+            border: none;
+            margin-left: 13px;
+
+        }
+
+        .login>button:hover {
+            background-color: #e6e6f7;
+            cursor: pointer;
+        }
+
+        /* navbar css */
+
+
+
+        body {
+            background-color: rgb(236, 238, 240);
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        #main {
+
+            display: block;
+            width: 100%;
+            display: wrap;
+            /* height: 50%; */
+
+        }
+
+        #smallbox {
+            color: black;
+            background-color: white;
+            width: 30%;
+            position: absolute;
+            margin-left: 10px;
+            height: 25%;
+            padding-left: 20px;
+            top: 850px;
+
+        }
+
+        #box {
+
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 570px;
+            gap: 15px;
+            margin-bottom: 20%;
+            padding: 5%;
+
+        }
+
+        #card {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            background-color: rgb(250, 251, 252);
+            width: 350px;
+        }
+
+        #box2:hover {
+            background-color: rgba(232, 241, 247, );
+            color: #c7c7d8;
+        }
+
+        #box2 {
+            color: black;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            height: 40px;
+
+        }
+
+        #box3 {
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 570px;
+            gap: 15px;
+            margin-bottom: 10%;
+            padding: 10%;
+
+        }
+
+        .abc {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #ARRIVALS {
+            height: fit-content;
+            width: 50%;
+            /* border: 1px solid red; */
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            padding: 30px;
+            font-size: small;
+            color: black;
+
+        }
+
+        #box4 {
+            /* border: 1px solid red; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            gap: 10px;
+            text-align: center;
+            color: black;
+            background-color: rgb(250, 251, 252);
+            height: 100%;
+            padding: 1%;
+
+        }
+
+        #box5 {
+
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 570px;
+            gap: 15px;
+            padding: 7%;
+        }
+
+        #sbox1 {
+            /* border: 1px solid red; */
+            width: 20%;
+
+
+        }
+
+        #box6 {
+            margin-top: 5%;
+        }
+
+        #recentbox {
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 570px;
+            gap: 15px;
+            margin-bottom: 10%;
+            padding: 5%;
+        }
+
+        #lastcard {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px;
+            /* margin-bottom: 10%; */
+            height: 70%;
+        }
+
+       .sbox5 {
+            /* border: 1px solid red; */
+            background-color: white;
+            margin-left: -35%;
+            width: 30%;
+            top: 833%;
+            position: absolute;
+            padding-left: 20px;
+        }
+
+        #box6 {
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #imgbox {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: black;
+        }
+
+        .sbox3 {
+            /* border: 1px solid red; */
+            background-color: white;
+            margin-left: 10px;
+            width: 30%;
+            top: 1090%;
+            position: absolute;
+            padding-left: 20px;
+        }
+
+        .sbox4 {
+            /* border: 1px solid red; */
+            background-color: white;
+            margin-left: 15%;
+            width: 30%;
+            top: 1090%;
+            position: absolute;
+            padding-left: 20px;
+        }
+        /* .sbox7{
+            width: 35%;
+            height: 33%;
+            
+        } */
+
+        /* foooter css */
+        #help-section {
+            width: 70%;
+            margin: auto;
+            margin-top: 350px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 400px;
+            column-gap: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            width: 20%;
+            height: 1px;
+            margin: auto;
+            background-color: black;
+            margin-top: 15px;
+        }
+
+        #help-section>div>a {
+            text-decoration: none;
+        }
+
+        #help-section>div>a>p {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        #newsletter {
+            background-color: white;
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 25%;
+        }
+
+        #email-input {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #connect {
+            width: 72%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #connect>div:first-child {
+            width: 38%;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 15px;
+        }
+
+        #connect>div:last-child {
+            width: 37%;
+            display: flex;
+            font-size: 15px;
+        }
+
+        #connect>div>a {
+            text-decoration: none;
+        }
+
+        #download {
+            margin-left: 20px;
+        }
+
+        #hr-bottom {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+        #bottom-last {
+
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #bottom-last>a:first-child>p {
+            color: white;
+            padding-top: 3%;
+            padding-bottom: 1%;
+        }
+
+        #bottom-last>a:last-child>p {
+            color: grey;
+        }
+
+        #bottom-last>a {
+            text-decoration: none;
+        }
+
+        /* footer css end */
+    </style>
+</head>
+
+<body>
+
+
+<<<<<<
+  <!-- navbar -->
+
+  <div id="navbar">
+    <div class="section">
+       <div class="page">
+           <select name="India" id="select">
+               <option value="india">India</option>
+               <option value="Albenia">Albenia</option>
+               <option value="Aergentina">Aergentina</option>
+               <option value="Australia">Australia</option>
+               <option value="Colabmia">Colabmia</option>
+               <option value="Egypt">Egypt</option>
+           </select>
+           <a href="customercare">CUSTOMER CARE</a>
+
+       </div>
+        <div class="login" >
+            <a href="ragister.html">Register</a>
+           <!-- <button><i class="fa fa-pencil"></i><a href="./signup.html"></a> Register</button> -->
+           <!-- <a href="rigister"><i class="fa fa-pencil"></i> REGISTER</a> -->
+           <!-- <a href="login"> <i class="fa fa-lock"></i>  LOGIN</a> -->
+           <button><i class="fa fa-lock"></i> LOGIN</button>
+        </div>
+    
+    </div>
+    <div class="section2">
+       <div>
+        <a href="./womens.html">WOMENS</a>
+        <a href="./mens.html">MENS</a>
+        <a href="./kids.html">KIDS</a>
+        <a href="./design.html">DISIGN+ART</a>
+       </div>
+       <a class="logoimg" href="homepage.html"><img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a>
+       <div class="search-container">
+           <!-- <form action="/action_page.php">
+=======
+    <!-- navbar -->
+
+    <div id="navbar">
+        <div class="section">
+            <div class="page">
+                <select name="India" id="select">
+                    <option value="india">India</option>
+                    <option value="Albenia">Albenia</option>
+                    <option value="Aergentina">Aergentina</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Colabmia">Colabmia</option>
+                    <option value="Egypt">Egypt</option>
+                </select>
+                <a href="customercare">CUSTOMER CARE</a>
+
+            </div>
+            <div class="login">
+                <a href="ragister.html">Ragister & Login</a>
+                <!-- <button><i class="fa fa-pencil"></i><a href="./signup.html"></a> Register</button> -->
+                <!-- <a href="rigister"><i class="fa fa-pencil"></i> REGISTER</a> -->
+                <!-- <a href="login"> <i class="fa fa-lock"></i>  LOGIN</a> -->
+                <!-- <button><i class="fa fa-lock"></i> LOGIN</button> -->
+            </div>
+
+        </div>
+        <div class="section2">
+            <div>
+                <a href="./womens.html">WOMENS</a>
+                <a href="./mens.html">MENS</a>
+                <a href="./kids.html">KIDS</a>  
+                <a href="./design.html">DISIGN+ART</a>
+            </div>
+            <a class="logoimg" href="./homepage.html"><img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg"
+                    alt=""></a>
+            <div class="search-container">
+                <!-- <form action="/action_page.php">
+>>>>
+            <input type="text" placeholder="Search.." name="search"> -->
+                <!-- <button type="submit"><i class="fa fa-search" style="font-size: 25px;"></i></button> -->
+                <a href="search"><i class="fa fa-search"></i></a>
+                <a href="wishlist"><i class="fa fa-heart-o"></i></a>
+                <a href="bag"><i class="fa fa-shopping-bag"></i></a>
+                <!-- </form> -->
+
+            </div>
+
+
+        </div>
+        <div class="last_bar">
+            <a href="new_arrivals">NEW ARRIVALS</a>
+            <a href="#mens">DESIGNERS</a>
+            <a href="#kids">CLOTHING</a>
+            <a href="#disign">SHOES</a>
+            <a href="accessories">ACCESSORIES & BAGS</a>
+            <a href="yoox">YOOXGEN</a>
+            <a href="collebs">COLLABORATIONS</a>
+            <a href="bestoffers">BEST OFFERS</a>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- navbar end -->
+    <div>
+
+
+
+
+        <img id="main"src="https://shangay.com/sites/default/files/hinds3.jpg"alt="">
+        <div id="smallbox">
+            <h1>JUST LOVE YOURSELF</h1>
+            <P style="color: rgb(105, 94, 94);">Share your pride</P>
+            <a href="https://www.yoox.com/us/project/trend_men">RIGHT THIS WAY</a>
+
+        </div>
+    </div>
+
+    <div id="box">
+        <div>
+            <a href="https://www.yoox.com/us/women/shoponline?dept=wprm_2206CTD"> <img
+                    src="https://www.yoox.com/images/yoox80/banners/6824_4_FocusOnAccessories_M_HL.jpg?634485886869569819#width=430&height=600"
+                    alt=""></a>
+            <h1>BEAT THE HEAT</h1>
+            <h2 style="color: rgb(105, 94, 94);">Stay Cool With this Accessories</h2>
+            <a style="color: black;" href="https://www.yoox.com/us/women/shoponline?dept=wprm_2206CTD">
+                <h2>SHOP NOW</h2>
+            </a>
+        </div>
+        <div>
+            <div id="card">
+                <h2 id="box2">DESIGNER</h2>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/see%20by%20chlo%C3%A9_d">
+                    <h3>SEE BY CHOICE</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/self-portrait_d">
+                    <h3>SELF-PORTRAIT</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/dolce%20&%20gabbana_md#/dept=women&Md=25">
+                    <h3>DOLCE & GABBANA</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/roberto%20cavalli_md#/dept=women&Md=65">
+                    <h3>ROBERTO CAVALLI</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/stella%20mccartney_d#/dept=women&d=1501">
+                    <h3>STELLA MCCARTNEY</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/marni_md#/dept=women&Md=203">
+                    <h3>MARNI</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/maison%20margiela_md#/dept=women&Md=50">
+                    <h3>MAICON MARGEILA</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/versace_md#/dept=women&Md=1889">
+                    <h3>VERSACE</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/chlo%C3%A9_md#/dept=women&Md=215">
+                    <h3>CHLOE</h3>
+                </a>
+                <a id="box2" href="https://www.yoox.com/us/women/shoponline/balenciaga_d#/dept=women&d=221">
+                    <h3>BALANCIAGO</h3>
+                </a>
+            </div>
+
+
+
+        </div>
+        <div>
+            <img src="https://www.yoox.com/images/yoox80/banners/5628_1_Multiform_HL.gif?634485886869569819#width=430&height=600"
+                alt="">
+            <h1>THE MULTI FORM* ARTIST</h1>
+            <h2 style="color: rgb(105, 94, 94);">Discover the exclusive designs</h2>
+            <a style="color: black;" href="https://www.yoox.com/us/project/multiform_artists">
+                <h2>SHOP NOW</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="abc">
+        <h1>NEW ARRIVALS</h1>
+        <a style="color: black;"
+            href="https://www.yoox.com/us/women/new%20arrivals/shoponline#/dept=newarrivalswomen">VIEW ALL</a>
+
+    </div>
+    <div id="box3">
+        <div id="ARRIVALS">
+            <a style="color: black;" href="https://www.yoox.com/us/12793777DM/item#cod10=12793777DM&sizeId=-1"> <img
+                    src="https://www.yoox.com/images/items/12/12793777DM_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>SEE BY CHLOE</h2>
+                <p style="color: rgb(105, 94, 94);">Top</p>
+                <h4>$375.00</h4>
+            </a>
+
+
+        </div>
+        <div id="ARRIVALS">
+            <a style="color: black;" href="https://www.yoox.com/us/13792883EJ/item#cod10=13792883EJ&sizeId=-1"> <img
+                    src="https://www.yoox.com/images/items/13/13792883EJ_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>MISSONI</h2>
+                <p style="color: rgb(105, 94, 94);">Maxi-skirts</p>
+                <h4>
+                    <span style="color: rgb(105, 94, 94);">42% OFF</span>
+                </h4>
+                <h4>$769.00</h4>
+            </a>
+
+
+        </div>
+        <div id="ARRIVALS">
+            <a style="color: black;" href="https://www.yoox.com/us/15212139WS/item#cod10=15212139WS&sizeId=3"> <img
+                    src="https://www.yoox.com/images/items/15/15212139WS_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>CHLOE</h2>
+                <p style="color: rgb(105, 94, 94);">Midi dress</p>
+                <h4>
+                    <span style="color: rgb(105, 94, 94);">39% OFF</span>
+                </h4>
+                <h4>$1861.00</h4>
+            </a>
+
+        </div>
+    </div>
+
+    <div id="box4">
+        <div class="vans">
+            <a style="color: black;" href="https://www.yoox.com/us/women/shoponline?dept=wmrc_2022vns"> <img
+                    src="https://www.yoox.com/images/yoox80/banners/6825_1_Vans_Tris_WM.jpg?634485886869569819#width=387&height=500"
+                    alt="">
+                <h2>VANS</h2>
+                <p style="color: rgb(105, 94, 94);">Iconic models and details</p>
+            </a>
+
+        </div>
+        <div>
+            <a style="color: black;" href="https://www.yoox.com/us/women/shoponline?dept=montblancwomen"> <img
+                    src="https://www.yoox.com/images/yoox80/banners/6825_5_Montblanc_W_Tris.jpg?634485886869569819#width=473&height=660"
+                    alt="">
+                <h2>MONTBLANC</h2>
+                <p style="color: rgb(105, 94, 94);">Father's Day: find a perfect present</p>
+            </a>
+
+        </div>
+        <div class="vansh">
+            <a style="color: black;" href="https://www.yoox.com/us/12700141NG/item#cod10=12700141NG&sizeId=-1"> <img
+                    src="https://www.yoox.com/images/yoox80/banners/6825_1_Artifact_Tris.jpg?634485886869569819#width=473&height=500"
+                    alt="">
+                <h2>ARTIFACT BY SUPERGA</h2>
+                <p style="color: rgb(105, 94, 94);">The value of craftsmanship</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="abc">
+        <h1 style="color: rgb(82, 77, 77);">ONE OF A KIND</h1>
+        <a style="color: black;" href="https://www.yoox.com/us/women/shoponline#/dept=women_oneofthekind">VIEW ALL</a>
+
+    </div>
+    <div id="box5">
+        <div>
+            <a style="color: black;" href="https://www.yoox.com/us/12779290QW/item#cod10=12779290QW&sizeId=2"> <img
+                    src="https://www.yoox.com/images/items/12/12779290QW_14_f.jpg?impolicy=crop&width=306&height=390 "
+                    alt="">
+                <h2>SELF-PORTRAIT</h2>
+                <p style="color: rgb(105, 94, 94);">Top</p>
+                <h4 style="color: rgb(105, 94, 94);">
+                    <span><del>$ 690.00</del></span>
+                    <span>50%% OFF</span>
+                </h4>
+                <h4>$342.00</h4>
+            </a>
+
+
+
+        </div>
+        <div>
+            <a style="color: black;" href="https://www.yoox.com/us/15204227CD/item#cod10=15204227CD&sizeId=4"> <img
+                    src="https://www.yoox.com/images/items/15/15204227CD_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>VARSACE</h2>
+                <p style="color: rgb(105, 94, 94);">Short-Dress</p>
+                <h4 style="color: rgb(105, 94, 94);">
+                    <span><del>$ 2,906.00</del></span>
+                    <span>58% OFF</span>
+                </h4>
+                <h4>$1200.00</h4>
+            </a>
+
+
+
+        </div>
+        <div>
+            <a style="color: black;" href="https://www.yoox.com/us/13780367GR/item#cod10=13780367GR&sizeId=3"> <img
+                    src="https://www.yoox.com/images/items/13/13780367GR_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt=""><div>
+                <h2>PAUL & JOE</h2>
+                <p style="color: rgb(105, 94, 94);">Midi-skiri</p>
+                <h4 style="color: rgb(105, 94, 94);">
+                    <span><del>$ 316.00</del></span>
+                    <span>48% OFF</span>
+                </h4>
+                <h4>$163.00</h4>
+            </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="box6">
+        <img src="https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886869569819#width=930&height=660"
+            alt="">
+        <div class="sbox5">
+            <h2>WHERE PEOPLE DANCE</h2>
+            <p>The new SS22 collection from 8 by YOOX</p>
+            <a style="color: black;" href="https://www.yoox.com/us/men/shoponline?dept=gm8byooxss">SHOP NOW</a>
+            <a style="color: black;" href="https://www.yoox.com/us/project/8byYOOX_SS22">GET INSPIRED</a>
+        </div>
+        <!-- <div class="sbox7">
+          <a href="https://www.yoox.com/us/12700141NG/item#cod10=12700141NG&sizeId=-1"><img src="https://www.yoox.com/images/items/12/12700141NG_14_f.jpg?impolicy=crop&width=306&height=390"alt="">
+            <div><h3>LOWER IMPACT</h3><H5>8 BY YOOX</H5><p>Crop Top</p><p>56% off</p><p>$ 35.00</p></a></div>
+             -->
+            
+        </div>
+    </div>
+    <div class="abc">
+        <h1>RECENTLY VIEWED</h1>
+        <a style="color: rgb(105, 94, 94);"
+            href="https://www.yoox.com/us/women/new%20arrivals/shoponline#/dept=newarrivalswomen">VIEW ALL</a>
+
+    </div>
+    <div id="recentbox">
+        <div id="ARRIVALS">
+            <a style="color: black;" href="https://www.yoox.com/us/15204227CD/item#cod10=15204227CD&sizeId=4"> <img
+                    src="https://www.yoox.com/images/items/15/15204227CD_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>SEE BY CHOLE</h2>
+                <p style="color: rgb(105, 94, 94);">T-shirt</p>
+                <h4 style="color: rgb(105, 94, 94);">
+                    <span><del>$ 460.00</del></span>
+                </h4>
+                <h4>$375.00</h4>
+            </a>
+
+
+        </div>
+        <div id="ARRIVALS">
+            <a style="color: black;" href="https://www.yoox.com/us/17263907PT/item#cod10=17263907PT&sizeId=-1"> <img
+                    src="https://www.yoox.com/images/items/17/17263907PT_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>MISSONI</h2>
+                <p style="color: rgb(105, 94, 94);">Maxi-skirts</p>
+                <h4 style="color: rgb(105, 94, 94);">
+                    <span><del>$ 652.00</del></span>
+                    <span>42% OFF</span>
+                </h4>
+                <h4>$769.00</h4>
+            </a>
+
+
+        </div>
+        <div id="ARRIVALS">
+            <a style="color: black;" href="https://www.yoox.com/us/13780367GR/item#cod10=13780367GR&sizeId=3"> <img
+                    src="https://www.yoox.com/images/items/13/13780367GR_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h2>CHLOE</h2>
+                <p style="color: rgb(105, 94, 94);">Midi dress</p>
+                <h4 style="color: rgb(105, 94, 94);">
+                    <span><del>$ 2029.00</del></span>
+                    <span>39% OFF</span>
+                </h4>
+                <h4>$1861.00</h4>
+            </a>
+        </div>
+    </div>
+
+    <div id="lastcard">
+        <div>
+            <a href=""><img
+                    src="https://www.yoox.com/images/yoox80/banners/5460_1_Living_Bottom_WM.jpg?634485886869569819#width=690&height=637"
+                    alt="">
+                <div class="sbox3">
+                    <h1>CRAZY MOOD</h1>
+                    <p>The new photoshoot by Living Corriere</p>
+                    <a style="color: black;" href="https://www.yoox.com/us/project/livingroom">DISCOVER MORE</a>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href=""><img
+                    src="https://www.yoox.com/images/yoox80/banners/6824_1_Trendvacation_HalfBottom_W.jpg?634485886869569819#width=690&height=637"
+                    alt="">
+                <div class="sbox4">
+                    <h1>OUT OF OFFICE</h1>
+                    <p>Vibrante vacation style</p>
+                    <a style="color: black;" href="https://www.yoox.com/us/project/livingroom">DISCOVER MORE</a>
+                    <a style="color: black;" href="https://www.yoox.com/us/men/shoponline?dept=mmrc_2206trndvbrnt">SHOP
+                        NOW</a>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+<!-- footer section -->
+<div id="help-section">
+    <div>
+        <h3>NEW TO YOOX</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div>
+        <h3>HELP</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div id="newsletter">
+        <h3>YOOX NEWS</h3>
+        <a href="">
+            <p>Sign up for the newsletter
+                and discover the latest arrivals and promotions</p>
+        </a>
+        <input type="email" placeholder="INSERT YOUR E-MAIL ADDRESS" id="email-input">
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div>
+        <h3>MYOOX</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div>
+        <h3>ABOUT US</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+</div>
+<hr id="hr-bottom">
+
+<div id="connect">
+    <div>
+        <p>CONNECT WITH US</p>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-youtube"></i></a>
+        <a href=""><i class="bi bi-pinterest"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+
+    </div>
+    <div>
+        <a href=""><i class="bi bi-tablet"></i></i></a>
+        <a href="">
+            <p id="download">DOWNLOAD THE APP FOR iOS / ANDROID</p>
+        </a>
+    </div>
+</div>
+<div id="bottom-last">
+    <a href="">
+        <p>Powered by YOOX NET-A-PORTER GROUP - COPYRIGHT <span>&copy</span> 2000-2022 YOOX NET-A-PORTER GROUP
+            S.P.A - ALL RIGHTS RESERVERD - SIAE LICENCE # 401/1/526</p>
+    </a>
+    <a href="">
+        <p>LEGAL AREA / PRIVACY POLICY</p>
+    </a>
+</div>
+</div>
+
+</body>
+
+</html>

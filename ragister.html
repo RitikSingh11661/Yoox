@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #e72fff;
+	background-color: #ff2bed;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+ button.abc {
+	background-color: transparent;
+	border-color: #FFFFFF;
+} 
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.log-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.register-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .register-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .slider{
+	transform: translateX(-100%);
+}
+
+.slide {
+	background: linear-gradient(to right, #ff2bf4, #8a41ff);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .slide{
+  	transform: translateX(50%);
+}
+
+.slide-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .slide-left {
+	transform: translateX(0);
+}
+
+.slide-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.social-media {
+	margin: 20px 0;
+}
+
+.social-media a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+/* navabar */
+#navbar{
+width:100%;
+position: relative;
+/* margin: auto; */
+top:0px;
+background-color: white;
+
+
+ }
+ a{
+     text-decoration: none;
+     color: black;
+     font-size: 12px;
+     font-weight: bold;
+     font-family: 'cormorant garamond',serif;
+ }
+ /* .section2>div>a:hover{
+  /* background-color: #ccc; */
+ 
+
+
+
+ .section{
+     display: flex;
+     justify-content: space-around;
+ }
+
+.section2{
+
+ height: 50%;
+ display: flex;
+ justify-content: space-around   ;
+ align-items: center;
+ padding-left: 11%;
+ padding-right: 11%;
+}
+
+.search-container .btn{
+
+background-color: white;
+border: none;
+
+cursor: pointer;
+}
+.search-container>a{
+margin-left: 50px;
+font-size: 25px;
+
+}
+i{
+ font-size: 20px;
+}
+.section2>div>a{
+ padding: 10px;
+
+
+}
+.section2>div:first-child>a:hover{
+ background-color: #f2f2f6;
+}
+.login>a{
+ margin-left: 30px;
+}
+.page>select{
+ border: none;
+ text-align: center;
+
+cursor: pointer;
+
+}
+.page>a,.login>.btn,#select{
+ text-decoration: underline;
+}
+.page>a:hover,.login>.btn:hover,#select:hover{
+ text-decoration: none;
+}
+#last_bar>a{
+ color:white;
+ height: 29px;
+justify-content: space-evenly;
+ margin-left: 25px;
+ font-weight: lighter;
+ font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+#last_bar>a:hover{
+ color: #76767b;
+}
+#last_bar{
+ border: 1px solid black;
+
+ background-color: black;
+ text-align: center;
+ align-items: center;
+ padding: 10px;
+
+
+}
+.logoimg{
+ width: 100px;
+ padding-bottom: 10px;
+}
+.login>.btn{
+border: none;
+margin-left: 13px;
+
+}
+.login>.btn:hover{
+background-color: #e6e6f7;
+cursor: pointer;
+}
+/* navbar */
+    </style>
+</head>
+<body>
+<!-- navbar -->
+<div id="navbar">
+    <div class="section">
+       <div class="page">
+           <select name="India" id="select">
+               <option value="india">India</option>
+               <option value="Albenia">Albenia</option>
+               <option value="Aergentina">Aergentina</option>
+               <option value="Australia">Australia</option>
+               <option value="Colabmia">Colabmia</option>
+               <option value="Egypt">Egypt</option>
+           </select>
+           <a href="customercare">CUSTOMER CARE</a>
+
+       </div>
+        <div class="login" >
+			<a href="ragister.html">Register</a>
+           <!-- <button><i class="fa fa-pencil"></i> Register</button> -->
+           <!-- <a href="rigister"><i class="fa fa-pencil"></i> REGISTER</a> -->
+           <!-- <a href="login"> <i class="fa fa-lock"></i>  LOGIN</a> -->
+           <button><i class="fa fa-lock"></i> LOGIN</button>
+        </div>
+
+    </div>
+    <div class="section2">
+       <div>
+        <a href="./WOMENS.html">WOMENS</a>
+        <a href="./mens.html">MENS</a>
+        <a href="./kids.html">KIDS</a>
+        <a href="./Design.html">DISIGN+ART</a>
+       </div>
+       <a class="logoimg"href="homepage.html"><img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a>
+       <div class="search-container">
+           <!-- <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search"> -->
+            <!-- <button type="submit"><i class="fa fa-search" style="font-size: 25px;"></i></button> -->
+            <a href="search"><i class="fa fa-search"></i></a>
+            <a href="wishlist"><i class="fa fa-heart-o"></i></a>
+            <a href="bag"><i class="fa fa-shopping-bag"></i></a>
+           <!-- </form> -->
+
+         </div>
+
+
+    </div>
+    <div id="last_bar">
+       <a href="new_arrivals">NEW ARRIVALS</a>
+       <a href="#mens">DESIGNERS</a>
+       <a href="#kids">CLOTHING</a>
+       <a href="#disign">SHOES</a>
+       <a href="accessories">ACCESSORIES & BAGS</a>
+       <a href="yoox">YOOXGEN</a>
+       <a href="collebs">COLLABORATIONS</a>
+       <a href="bestoffers">BEST OFFERS</a>
+    </div>
+
+
+
+   </div>
+   <!-- <div id="body"> -->
+     <!-- <img src="https://www.yoox.com/images/yoox80/banners/6895_1_Pride_Main_WM.jpg?634485886601286852#width=1380&height=637" alt=""> -->
+   <!-- </div> -->
+<!-- navbar  -->
+    <h2>Register Page</h2>
+<div class="container" id="container">
+	<div class="form-container register-container">
+		<form action="#">
+			<h4>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</h4>
+			<div class="social-media">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or with your email</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button class="btn">Register</button>
+		</form>
+	</div>
+	<div class="form-container log-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-media">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button class="btn">Log In</button>
+		</form>
+	</div>
+	<div class="slider">
+		<div class="slide">
+			<div class="slide-panel slide-left">
+				<h1>Welcome Back!</h1>
+				<p>It’s great to see you again.<s/p>
+				<button class="abc" id="signIn">Log In</button>
+			</div>
+			<div class="slide-panel slide-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details</p>
+				<button class="abc" id="signUp">Register</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+   
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+</head>
+<style>
+    body {
+        font-family: 'Cormmorant Garamond', serif;
+    }
+
+    #start {
+        width: 100%;
+        /* border: 1px solid black; */
+        height: 4000px
+    }
+
+    #img {
+        display: flex;
+        /* margin: auto; */
+        margin-top: 100px;
+    }
+
+    #bag>img {
+        width: 70%;
+        height: 390px;
+        padding-left: 200px;
+        margin-right: 50px
+    }
+
+    /* #inside1{
+        position: relative;
+        top:200px;
+        right:400px;
+        width: 5px;
+        height: 20px;
+    }
+    */
+    #jhola {
+        width: 25%;
+    }
+
+    #jhola>img {
+        display: flex;
+        justify-content: center;
+        height: 280px;
+        margin: auto;
+    }
+
+    #jhola>h1 {
+        text-align: center;
+        color: rgb(51, 51, 51);
+    }
+
+    #jhola>p {
+        margin: auto;
+        line-height: 20px;
+        font-size: 20px;
+        color: rgb(198, 198, 198);
+    }
+
+    #tagh {
+        line-height: 60px;
+        padding: 100px;
+        text-align: center;
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+        color: rgb(51, 51, 51);
+    }
+
+    #myimg>img {
+        width: 40%;
+        height: 450px;
+        padding-left: 400px;
+    }
+
+    #myimg>h1,
+    p {
+        text-align: center;
+        color: rgb(51, 51, 51);
+    }
+
+    #myimg>p {
+        color: rgb(198, 198, 198);
+
+    }
+
+    #somespecail {
+        width: 70%;
+        margin: auto;
+    }
+
+    #somespecail>.top {
+        display: flex;
+        gap: 103px;
+    }
+
+    #somespecail>.top>div:nth-child(1)>img {
+        width: 400px;
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+
+    #somespecail>.top>div:nth-child(2) {
+        margin-top: 240px;
+    }
+
+    #somespecail>.top>div:nth-child(2)>img {
+        width: 400px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    #somespecail>.top>div:nth-child(3) {
+        margin-top: 260px;
+    }
+
+    #somespecail>div:nth-child(2) {
+        width: 400px;
+        margin-top: -180px;
+    }
+
+    #somespecail>div:nth-child(2)>img {
+        width: 400px;
+    }
+
+    #somespecail>.top>div>h1,
+    p {
+        text-align: center;
+        margin: auto;
+        justify-items: center;
+    }
+
+    #slide {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    #slide>.picks>h2 {
+
+        justify-items: center;
+    }
+
+    #slide>div>img {
+        justify-content: space-between;
+        width: 60%;
+        height: 100px;
+        margin-top: 90px;
+        padding: 30px;
+    }
+
+    #slide>div>h3,
+    p,
+    h4 {
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+        height: 5px;
+    }
+
+    #slide>button {
+        height: 20px;
+        margin-top: 200px;
+    }
+
+    #last>img {
+        width: 80%;
+        height: 200px;
+        padding: 120px;
+        margin-top: 30px;
+    }
+
+    .inside2>h1,
+    p {
+        color: white;
+        position: relative;
+        width: 30%;
+        bottom: 300px;
+        margin-left: 450px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .inside2>a {
+        position: relative;
+        bottom: 300px;
+        margin-left: 630px;
+        color: white;
+    }
+
+    /* navbar */
+    #navbar {
+        width: 100%;
+        position: fixed;
+        /* margin: auto; */
+        top: 0px;
+        background-color: white;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'cormorant garamond', serif;
+    }
+
+    /* .section2>div>a:hover{
+  /* background-color: #ccc; */
+
+
+
+
+    .section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section2 {
+
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+
+    .search-container button {
+
+        background-color: white;
+        border: none;
+
+        cursor: pointer;
+    }
+
+    .search-container>a {
+        margin-left: 50px;
+        font-size: 25px;
+
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .section2>div>a {
+        padding: 10px;
+
+
+    }
+
+    .section2>div:first-child>a:hover {
+        background-color: #f2f2f6;
+    }
+
+    .login>a {
+        margin-left: 30px;
+    }
+
+    .page>select {
+        border: none;
+        text-align: center;
+
+        cursor: pointer;
+
+    }
+
+    .page>a,
+    .login>button,
+    #select {
+        text-decoration: underline;
+    }
+
+    .page>a:hover,
+    .login>button:hover,
+    #select:hover {
+        text-decoration: none;
+    }
+
+    #last_bar>a {
+        color: white;
+        height: 29px;
+        justify-content: space-evenly;
+        margin-left: 25px;
+        font-weight: lighter;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #last_bar>a:hover {
+        color: #76767b;
+    }
+
+    #last_bar {
+        border: 1px solid black;
+
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+
+
+    }
+
+    .logoimg {
+        width: 100px;
+        padding-bottom: 10px;
+    }
+
+    .login>button {
+        border: none;
+        margin-left: 13px;
+
+    }
+
+    .login>button:hover {
+        background-color: #e6e6f7;
+        cursor: pointer;
+    }
+
+
+    /* navbar */
+</style>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div class="section">
+            <div class="page">
+                <select name="India" id="select">
+                    <option value="india">India</option>
+                    <option value="Albenia">Albenia</option>
+                    <option value="Aergentina">Aergentina</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Colabmia">Colabmia</option>
+                    <option value="Egypt">Egypt</option>
+                </select>
+                <a href="customercare">CUSTOMER CARE</a>
+
+            </div>
+            <div class="login">
+                <a href="ragister.html">Register</a>
+                <!-- <button><i class="fa fa-pencil"> <a href="ragister.html"></a></i> Register</button> -->
+                <!-- <a href="rigister"><i class="fa fa-pencil"></i> REGISTER</a> -->
+                <!-- <a href="login"> <i class="fa fa-lock"></i>  LOGIN</a> -->
+                <button><i class="fa fa-lock"></i> LOGIN</button>
+            </div>
+
+        </div>
+        <div class="section2">
+            <div>
+                <a href="./WOMENS.html">WOMENS</a>
+                <a href="./mens.html">MENS</a>
+                <a href="./kids.html">KIDS</a>
+                <a href="./Design.html">DISIGN+ART</a>
+            </div>
+            <a class="logoimg" href="mens.html"><img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg"
+                    alt=""></a>
+            <div class="search-container">
+                <!-- <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search"> -->
+                <!-- <button type="submit"><i class="fa fa-search" style="font-size: 25px;"></i></button> -->
+                <a href="search"><i class="fa fa-search"></i></a>
+                <a href="wishlist"><i class="fa fa-heart-o"></i></a>
+                <a href="bag"><i class="fa fa-shopping-bag"></i></a>
+                <!-- </form> -->
+
+            </div>
+
+
+        </div>
+        <div id="last_bar">
+            <a href="new_arrivals">NEW ARRIVALS</a>
+            <a href="#mens">DESIGNERS</a>
+            <a href="#kids">CLOTHING</a>
+            <a href="#disign">SHOES</a>
+            <a href="accessories">ACCESSORIES & BAGS</a>
+            <a href="yoox">YOOXGEN</a>
+            <a href="collebs">COLLABORATIONS</a>
+            <a href="bestoffers">BEST OFFERS</a>
+        </div>
+
+
+
+    </div>
+
+    <!-- navbar -->
+
+    <div id="start">
+        <div id="img">
+            <div id="bag">
+                <img src="https://www.yoox.com/images/yoox80/banners/6769_1_MultiformProd_TOP1.jpg?634485886869569819#width=890&height=648"
+                    alt="design1">
+            </div>
+            <div id="jhola"> <img
+                    src="https://www.yoox.com/images/yoox80/banners/6769_1_GenzDesign_TOP2.jpg?634485886869569819#width=431&height=450"
+                    alt="design2">
+                <h1>IN MY ROOM</h1>
+                <!-- <p>Personalize your space with special creations and colors</p> -->
+            </div>
+        </div>
+
+        <div id="tagh">
+            <h1>"The concept of fluidity has become a guding principle in how the new generations redefine the world and
+                experience it."
+            </h1>
+        </div>
+        <div id="myimg"><img
+                src="https://www.yoox.com/images/yoox80/banners/6769_23_Living_Middle.jpg?634485886869569819#width=897&height=615"
+                alt="img3">
+            <h1>CRAZY MOOD</h1>
+            <!-- <P>The new photoshoot by Living Corriere</P> -->
+        </div>
+        <div id="somespecail">
+            <div class="top">
+                <div>
+                    <img src="https://www.yoox.com/images/yoox80/banners/6769_1_MinimalVSPop_Compo01.jpg?634485886869569819#width=431&height=450"
+                        alt="watch">
+                    <h1>MINIMAL OR POP?</h1>
+                    <!-- <P>Our edit has something for everyone</P> -->
+                </div>
+                <div>
+                    <img src="https://www.yoox.com/images/yoox80/banners/6769_2_Seletti_Compo3.jpg?634485886869569819#width=720&height=700"
+                        alt="some3">
+                    <h1>SELETTI</h1>
+                    <p>pure creativity</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/yoox80/banners/6769_2_PickedByNina_Compo2.gif?634485886869569819#width=542&height=542"
+                    alt="gif">
+                <h1>PICKED BY NINAXYOOX</h1>
+                <!-- <P>An unpercedented project of collectible design</P> -->
+            </div>
+        </div>
+        <div id="slide">
+            <div class="picks">
+                <h2>TOP PICKS</h2>
+            </div>
+            <div><img src="https://www.yoox.com/images/items/58/58053621MR_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="1">
+                <h3>MISSONI HOME</h3>
+                <P>pillow or pillow case</P>
+                <h4>$ 282.00</h4>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/58/58055684NC_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="2">
+                <h3>NILUFAR - PICKED BY NINA</h3>
+                <P>Art object</P>
+                <h4>$ 2,211.00</h4>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/58/58055671EH_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="3">
+                <h3>NILUFAR - PICKED BY NINA</h3>
+                <P>Art object</P>
+                <h4>$ 850.00</h4>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/58/58055674HK_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="4">
+                <h3>NILUFAR - PICKED BY NINA</h3>
+                <P>Art object</P>
+                <h4>$ 1,382.00</h4>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/58/58054462FC_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="">
+                <h3>FORNASETTI</h3>
+                <p>Decorative plates</p>
+                <h4>$205.00</h4>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/58/58055675AS_14_f.jpg?impolicy=crop&width=306&height=390"
+                    alt="6">
+                <h3>NILUFAR - PICKED BY NINA</h3>
+                <P>Art object</P>
+                <h4>$ 1,296.00</h4>
+
+            </div>
+            <button>></button>
+        </div>
+        <div id="last">
+            <img src="https://www.yoox.com/images/yoox80/banners/6769_1_DesignArt_BOTTOM.jpg?634485886869569819#width=1348&height=320"
+                alt="ls">
+            <div class="inside2">
+                <h1>DISIGN+ART</h1>
+                <P>Protagonists,stories,collaborations,projects.</P>
+                <a href="https://www.yoox.com/in/design+art">SEEALL</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

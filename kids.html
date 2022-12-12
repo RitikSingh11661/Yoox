@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <title>Kids</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            height: 90px;
+            width: 100%;
+            background-color: white;
+            position: fixed;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            /* font-family: 'cormorant garamond', serif; */
+        }
+
+       
+
+
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .section2 {
+
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 11%;
+            padding-right: 11%;
+        }
+
+        .search-container button {
+
+            background-color: white;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        .search-container>a {
+            margin-left: 50px;
+            font-size: 25px;
+
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        .section2>div>a {
+            padding: 10px;
+
+
+        }
+
+        .section2>div:first-child>a:hover {
+            background-color: #f2f2f6;
+        }
+
+        .login>a {
+            margin-left: 30px;
+        }
+
+
+        .page>select {
+            border: none;
+            text-align: center;
+
+            cursor: pointer;
+
+        }
+
+        .page>a,
+        .login>button,
+        #select {
+            text-decoration: underline;
+        }
+
+        .page>a:hover,
+        .login>button:hover,
+        #select:hover {
+            text-decoration: none;
+        }
+
+        .logoimg {
+            width: 100px;
+        }
+
+        .logoimg>img {
+            height: 35px;
+        }
+
+
+        .login>button {
+            border: none;
+            margin-left: 13px;
+
+        }
+
+        .login>button:hover {
+            background-color: #e6e6f7;
+            cursor: pointer;
+        }
+
+        #for-all {
+            width: 100%;
+            background-color:
+                #f3f3f3;
+        }
+
+        a {
+            color: black;
+        }
+
+        #second_nav {
+            display: flex;
+            background-color: #333;
+            color: #ffffff;
+            justify-content: center;
+            height: 35px;
+            align-items: center;
+            position: sticky;
+            top: 70px;
+        }
+
+        #second_nav>a>p {
+            color: white;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+
+        #second_nav>a>p:hover {
+            color: grey;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+
+        .banner>a>img {
+            width: 100%;
+            margin-bottom: -10px;
+            margin-top: 70px;
+        }
+
+        .banner>.details {
+            width: 28%;
+            height: 140px;
+            padding-left: 25px;
+            margin-left: 10px;
+            background-color: #fff;
+            position: absolute;
+            top: 110%;
+        }
+
+        .banner>.details>h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .banner>.details>p {
+            margin-bottom: 10px;
+        }
+
+        .banner>.details>p>a {
+            margin-right: 25px;
+        }
+
+        .banner>.details>p>a:hover {
+            color: grey;
+        }
+
+        .banner>.details>p:last-child {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .banner>.details2 {
+            width: 28%;
+            height: 140px;
+            padding-left: 25px;
+            margin-left: 10px;
+            background-color: #fff;
+            position: absolute;
+            top: 795%;
+        }
+
+        .banner>.details2>h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .banner>.details2>p {
+            margin-bottom: 10px;
+        }
+
+        .banner>.details2>p>a {
+            margin-right: 25px;
+        }
+
+        .banner>.details2>p>a:hover {
+            color: grey;
+        }
+
+        .banner>.details2>p:last-child {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+
+        #main-container {
+            height: 2500px;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            width: 73%;
+            margin: auto;
+            padding-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .container>.heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .container>.heading>p {
+            margin-top: 30px;
+        }
+
+        .container>.heading>p>a {
+            color: black;
+        }
+
+        .container>.heading>p>a:hover {
+            color: grey;
+        }
+
+        .container>.products {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .container>.products>a {
+            text-decoration: none;
+        }
+
+        .container>.products>a>div {
+            background-color: #fff;
+            padding-bottom: 20px;
+        }
+
+        .container>.products>a>div>h3 {
+            margin-bottom: 20px;
+        }
+
+        .container>.products>a>div>p {
+            margin-bottom: 10px;
+        }
+
+        .container>.products>a>div>div {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 7px;
+        }
+
+        .container>.products>a>div>div>p:first-child {
+            color: grey;
+            text-decoration: line-through;
+            margin-right: 5px;
+        }
+
+        .container>.products>a>div>div>p:last-child {
+            margin-left: 5px;
+        }
+
+        #box1 {
+            padding-bottom: 45px;
+        }
+
+        .container2 {
+            width: 73%;
+            margin: auto;
+            padding-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .container2>.heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .container2>.heading>p {
+            margin-top: 30px;
+            padding-left: 25px;
+        }
+
+        .container2>.heading>p>a {
+            margin-right: 25px;
+        }
+
+        .container2>.heading>p>a:last-child {
+            color: grey;
+        }
+
+        .container2>.products {
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 570px;
+            gap: 15px;
+        }
+
+        .container2>.products>div {
+            background-color: #fff;
+        }
+
+        .container2>.products>div>a {
+            text-decoration: none;
+        }
+
+        .container2>.products>div>a:hover {
+            color: grey;
+        }
+
+        .container2>.products>div>a>h3 {
+            margin-bottom: 13px;
+
+        }
+
+        .container2>.products>div>p {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .container2>.products>div>a+p {
+            margin-top: 150px;
+        }
+
+        .container2>.products>div>a+p>a:hover {
+            color: grey;
+        }
+
+        #main-collection {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            padding-top: 85px;
+            margin-bottom: 300px;
+
+        }
+
+        #main-collection>div:nth-child(2) {
+            margin: -30px;
+        }
+
+        #main-collection>div>h2 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        #main-collection>div>p {
+            margin-bottom: 25px;
+        }
+
+        #main-collection>div>p>a:hover {
+            color: grey;
+        }
+
+        #main-collection>div:nth-child(2)>p>a,
+        #main-collection>div:nth-child(3)>p>a {
+            margin-right: 25px;
+        }
+
+        #main-collection>div:nth-child(2)>p>a:hover,
+        #main-collection>div:nth-child(3)>p>a:hover {
+            color: grey;
+        }
+
+        .banner>img {
+            width: 100%;
+        }
+
+        /*                                  footer css starts from here                      */
+        #help-section {
+            width: 70%;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 400px;
+            column-gap: 25px;
+            text-align: center;
+
+            margin-bottom: 20px;
+
+        }
+
+        hr {
+            width: 20%;
+            height: 1px;
+            margin: auto;
+            background-color: black;
+            margin-top: 15px;
+        }
+
+        #help-section>div>a {
+            text-decoration: none;
+        }
+
+        #help-section>div>a>p {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        #newsletter {
+            background-color: white;
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 25%;
+        }
+
+        #email-input {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #connect {
+            width: 72%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #connect>div:first-child {
+            width: 38%;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 15px;
+        }
+
+        #connect>div:last-child {
+            width: 37%;
+            display: flex;
+            font-size: 15px;
+        }
+
+        #connect>div>a {
+            text-decoration: none;
+        }
+
+        #download {
+            margin-left: 20px;
+        }
+
+        #hr-bottom {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+        #bottom-last {
+
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #bottom-last>a:first-child>p {
+            color: white;
+            padding-top: 3%;
+            padding-bottom: 1%;
+        }
+
+        #bottom-last>a:last-child>p {
+            color: grey;
+        }
+
+        #bottom-last>a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="for-all">
+        <div id="navbar">
+            <div class="section">
+                <div class="page">
+                    <select name="India" id="select">
+                        <option value="india">India</option>
+                        <option value="Albenia">Albenia</option>
+                        <option value="Aergentina">Aergentina</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Colabmia">Colabmia</option>
+                        <option value="Egypt">Egypt</option>
+                    </select>
+                    <a href="customercare">CUSTOMER CARE</a>
+
+                </div>
+                <div class="login">
+                    <a href="ragister.html">Register</a>
+                    <!-- <button><i class="fa fa-pencil"></i> Register</button> -->
+                    <!-- <a href="rigister"><i class="fa fa-pencil"></i> REGISTER</a> -->
+                    <!-- <a href="login"> <i class="fa fa-lock"></i>  LOGIN</a> -->
+                    <button><i class="fa fa-lock"></i> LOGIN</button>
+                </div>
+
+            </div>
+            <div class="section2">
+                <div>
+                    <a href="./womens.html">WOMENS</a>
+                    <a href="./mens.html">MENS</a>
+                    <a href="./kids.html">KIDS</a>
+                    <a href="./Design.html">DISIGN+ART</a>
+                </div>
+                <a class="logoimg" href="./mens.html"><img
+                        src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a>
+                <div class="search-container">
+                    <!-- <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search"> -->
+                    <!-- <button type="submit"><i class="fa fa-search" style="font-size: 25px;"></i></button> -->
+                    <a href="search"><i class="fa fa-search"></i></a>
+                    <a href="wishlist"><i class="fa fa-heart-o"></i></a>
+                    <a href="bag"><i class="fa fa-shopping-bag"></i></a>
+                    <!-- </form> -->
+
+                </div>
+
+
+            </div>
+        </div>
+        <div id="second_nav">
+            <a href="">
+                <p>0-24 MONTHS</p>
+            </a>
+            <a href="">
+                <p>3-8 YEARS</p>
+            </a>
+            <a href="">
+                <p>9-16 YEARS</p>
+            </a>
+            <a href="">
+                <p>COLLABORATIONS</p>
+            </a>
+        </div>
+        <div class="banner">
+            <a href=""><img
+                    src="https://www.yoox.com/images/yoox80/banners/6821_1_BeachDays_Main_K.jpg?634485886601286852&impolicy=cropDefault&width=960&height=510"
+                    alt="FUN IN THE SUN"></a>
+
+            <div class="details">
+                <h2>FUN IN THE SUN</h2>
+                <P>Bright tones and tropical prints</P>
+                <p>
+                    <a href="">SHOP GIRLS</a>
+                    <a href="">SHOP BOYS</a>
+                </p>
+            </div>
+        </div>
+        <div id="main-container">
+            <div class="container">
+                <div class="heading">
+                    <h2>NEW ARRIVALS GIRLS</h2>
+                    <p><a href="">VIEW ALL</a></p>
+                </div>
+                <div class="products">
+                    <a href="">
+                        <div>
+                            <img src="https://www.yoox.com/images/items/12/12772190KA_14_f.jpg?impolicy=crop&width=306&height=390"
+                                alt="">
+                            <h3>OFF-WHITE KIDS</h3>
+                            <p>T-shirt</p>
+                            <div>
+                                <p>US$ 234,00</p>
+                                <p> 39% OFF</p>
+                            </div>
+                            <p>US$ 142,00</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="https://www.yoox.com/images/items/47/47307190BU_14_f.jpg?impolicy=crop&width=306&height=390"
+                                alt="">
+                            <h3>BANANA MOON</h3>
+                            <p>One-piece swimsuits</p>
+                            <div>
+                                <p>US$ 82,00</p>
+                                <p>40% OFF</p>
+                            </div>
+                            <p>US$ 49,00</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="https://www.yoox.com/images/items/17/17276201JP_14_f.jpg?impolicy=crop&width=306&height=390"
+                                alt="">
+                            <h3>DOLCE & GABBANA</h3>
+                            <p>Sandals</p>
+                            <div>
+                                <p>US$ 550,00</p>
+                                <p>36% OFF</p>
+                            </div>
+                            <p>US$ 347,00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="heading">
+                    <h2>NEW ARRIVALS BOYS</h2>
+                    <p><a href="">VIEW ALL</a></p>
+                </div>
+                <div class="products">
+                    <a href="">
+                        <div>
+                            <img src="https://www.yoox.com/images/items/12/12826937KT_14_f.jpg?impolicy=crop&width=306&height=390"
+                                alt="">
+                            <h3>MARCELO BURLON</h3>
+                            <p>T-shirt</p>
+                            <div>
+                                <p>US$ 194,00</p>
+                                <p>37% OFF</p>
+
+                            </div>
+                            <p>US$ 122,00</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div id="box1">
+                            <img src="https://www.yoox.com/images/items/49/49767439XT_14_f.jpg?impolicy=crop&width=306&height=390"
+                                alt="">
+                            <h3>NIKE</h3>
+                            <p>Outfits</p>
+                            <p>US$ 57,00</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="https://www.yoox.com/images/items/12/12478160KD_14_f.jpg?impolicy=crop&width=306&height=390"
+                                alt="">
+                            <h3>DRALPH LAUREN</h3>
+                            <p>Sweetshirt</p>
+                            <div>
+
+                                <p>US$ 107,00</p>
+                                <p>30% OFF</p>
+                            </div>
+                            <p>US$ 74,00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="heading">
+                    <h2>DESIGNERS</h2>
+                    <p>
+                        <a href="">GIRLS</a>
+                        <a href="">BOYS</a>
+                    </p>
+                </div>
+                <div class="products">
+                    <div>
+                        <p>BABY 0-24 MONTHS</p>
+                        <a href="">
+                            <h3>DOLICE & GABBANA</h3>
+                        </a>
+                        <a href="">
+                            <h3>IL GUFO</h3>
+                        </a>
+                        <a href="">
+                            <h3>DSQUARED2</h3>
+                        </a>
+                        <a href="">
+                            <h3>MONCLER</h3>
+                        </a>
+                        <a href="">
+                            <h3>FENDI</h3>
+                        </a>
+                        <a href="">
+                            <h3>GUCCI</h3>
+                        </a>
+                        <a href="">
+                            <h3>SIMONETTA</h3>
+                        </a>
+                        <a href="">
+                            <h3>ROBERTO CAVALLI</h3>
+                        </a>
+                        <p><a href="">VIEW ALL</a></p>
+
+                    </div>
+                    <div>
+                        <p>BABY 0-24 MONTHS</p>
+                        <a href="">
+                            <h3>DOLICE & GABBANA</h3>
+                        </a>
+                        <a href="">
+                            <h3>IL GUFO</h3>
+                        </a>
+                        <a href="">
+                            <h3>DSQUARED2</h3>
+                        </a>
+                        <a href="">
+                            <h3>MONCLER</h3>
+                        </a>
+                        <a href="">
+                            <h3>FENDI</h3>
+                        </a>
+                        <a href="">
+                            <h3>GUCCI</h3>
+                        </a>
+                        <a href="">
+                            <h3>SIMONETTA</h3>
+                        </a>
+                        <a href="">
+                            <h3>ROBERTO CAVALLI</h3>
+                        </a>
+                        <p><a href="">VIEW ALL</a></p>
+                    </div>
+                    <div>
+
+                        <p>BABY 0-24 MONTHS</p>
+                        <a href="">
+                            <h3>DOLICE & GABBANA</h3>
+                        </a>
+                        <a href="">
+                            <h3>IL GUFO</h3>
+                        </a>
+                        <a href="">
+                            <h3>DSQUARED2</h3>
+                        </a>
+                        <a href="">
+                            <h3>MONCLER</h3>
+                        </a>
+                        <a href="">
+                            <h3>FENDI</h3>
+                        </a>
+                        <a href="">
+                            <h3>GUCCI</h3>
+                        </a>
+                        <a href="">
+                            <h3>SIMONETTA</h3>
+                        </a>
+                        <a href="">
+                            <h3>ROBERTO CAVALLI</h3>
+                        </a>
+                        <p><a href="">VIEW ALL</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-collection">
+            <div>
+                <a href=""><img
+                        src="https://www.yoox.com/images/yoox80/banners/6821_3_Billieblush_Tris_K.jpg?634485886601286852#width=387&height=540"
+                        alt=""></a>
+                <h2>BILLIEBLUSH</h2>
+                <p>Wild and free: Discover the new collection</p>
+                <p><a href="">SHOP NOW</a></p>
+            </div>
+            <div>
+                <a href=""><img
+                        src="https://www.yoox.com/images/yoox80/banners/6821_1_GiocoeCasa_tris_K.jpg?634485886601286852#width=430&height=600"
+                        alt=""></a>
+                <h2>BILLIEBLUSH</h2>
+                <p>Wild and free: Discover the new collection</p>
+                <p>
+                    <a href="">SHOP GIRLS</a>
+                    <a href="">SHOP BOYS</a>
+                </p>
+            </div>
+            <div>
+                <a href=""><img
+                        src="https://www.yoox.com/images/yoox80/banners/6821_5_Kenzo_Tris_K.jpg?634485886601286852#width=387&height=540"
+                        alt=""></a>
+                <h2>BILLIEBLUSH</h2>
+                <p>Wild and free: Discover the new collection</p>
+                <p>
+                    <a href="">SHOP GIRLS</a>
+                    <a href="">SHOP BOYS</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="banner">
+            <a href=""><img
+                    src="https://www.yoox.com/images/yoox80/banners/6821_1_SummerCamp_Main_K.jpg?634485886601286852&impolicy=cropDefault&width=960&height=510"
+                    alt=""></a>
+            <div class="details2">
+                <h2>EXCELLENT ADVENTURES</h2>
+                <P>For camp, vacation and beyon</P>
+                <p>
+                    <a href="">SHOP GIRLS</a>
+                    <a href="">SHOP BOYS</a>
+                </p>
+            </div>
+        </div>
+        <!--                       footer html starts from here                -->
+        <div id="help-section">
+            <div>
+                <h3>NEW TO YOOX</h3>
+                <hr>
+                <a href="">
+                    <p>Shipping times & costs</p>
+                </a>
+                <a href="">
+                    <p>Payments and web security</p>
+                </a>
+                <a href="">
+                    <p>Product quality</p>
+                </a>
+                <a href="">
+                    <p>Track your order</p>
+                </a>
+                <a href="">
+                    <p>Returns & refunds</p>
+                </a>
+                <a href="">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Size Guide</p>
+                </a>
+            </div>
+            <div>
+                <h3>HELP</h3>
+                <hr>
+                <a href="">
+                    <p>Shipping times & costs</p>
+                </a>
+                <a href="">
+                    <p>Payments and web security</p>
+                </a>
+                <a href="">
+                    <p>Product quality</p>
+                </a>
+                <a href="">
+                    <p>Track your order</p>
+                </a>
+                <a href="">
+                    <p>Returns & refunds</p>
+                </a>
+                <a href="">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Size Guide</p>
+                </a>
+            </div>
+            <div id="newsletter">
+                <h3>YOOX NEWS</h3>
+                <a href="">
+                    <p>Sign up for the newsletter
+                        and discover the latest arrivals and promotions</p>
+                </a>
+                <input type="email" placeholder="INSERT YOUR E-MAIL ADDRESS" id="email-input">
+                <a href="">
+                    <p>Product quality</p>
+                </a>
+                <a href="">
+                    <p>Track your order</p>
+                </a>
+                <a href="">
+                    <p>Returns & refunds</p>
+                </a>
+                <a href="">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Size Guide</p>
+                </a>
+            </div>
+            <div>
+                <h3>MYOOX</h3>
+                <hr>
+                <a href="">
+                    <p>Shipping times & costs</p>
+                </a>
+                <a href="">
+                    <p>Payments and web security</p>
+                </a>
+                <a href="">
+                    <p>Product quality</p>
+                </a>
+                <a href="">
+                    <p>Track your order</p>
+                </a>
+                <a href="">
+                    <p>Returns & refunds</p>
+                </a>
+                <a href="">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Size Guide</p>
+                </a>
+            </div>
+            <div>
+                <h3>ABOUT US</h3>
+                <hr>
+                <a href="">
+                    <p>Shipping times & costs</p>
+                </a>
+                <a href="">
+                    <p>Payments and web security</p>
+                </a>
+                <a href="">
+                    <p>Product quality</p>
+                </a>
+                <a href="">
+                    <p>Track your order</p>
+                </a>
+                <a href="">
+                    <p>Returns & refunds</p>
+                </a>
+                <a href="">
+                    <p>FAQs</p>
+                </a>
+                <a href="">
+                    <p>Size Guide</p>
+                </a>
+            </div>
+        </div>
+        <hr id="hr-bottom">
+
+        <div id="connect">
+            <div>
+                <p>CONNECT WITH US</p>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-pinterest"></i></a>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+
+            </div>
+            <div>
+                <a href=""><i class="bi bi-tablet"></i></i></a>
+                <a href="">
+                    <p id="download">DOWNLOAD THE APP FOR iOS / ANDROID</p>
+                </a>
+            </div>
+        </div>
+        <div id="bottom-last">
+            <a href="">
+                <p>Powered by YOOX NET-A-PORTER GROUP - COPYRIGHT <span>&copy</span> 2000-2022 YOOX NET-A-PORTER GROUP
+                    S.P.A - ALL RIGHTS RESERVERD - SIAE LICENCE # 401/1/526</p>
+            </a>
+            <a href="">
+                <p>LEGAL AREA / PRIVACY POLICY</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
